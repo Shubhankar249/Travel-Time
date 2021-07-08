@@ -1,0 +1,12 @@
+#generate-graph {
+    margin: auto;
+    display: block;
+    font-size: larger;
+    background: palegoldenrod;
+    color: saddlebrown;
+}
+
+#show-graph {
+    width: 100%;
+    height: 700px;
+}
