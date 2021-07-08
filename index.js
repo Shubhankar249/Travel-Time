@@ -60,3 +60,19 @@ genGraph.onclick = function () {
 
 genGraph.click();
 
+function dfs(r, dist, graph) {
+    for (let i of graph[r]) {
+        if (dist[i[0]] > dist[r] + dist[i][1]) {
+            dist[i[0]] = dist[r] + dist[i][1];
+            dfs(i[0], dist, graph);
+        }
+    }
+}
+
+function dijkstra(graph, v, src) {
+    let dist = [];
+    for (let i = 0; i< v; i++)
+        dist.push(1000);
+    dist[src] = 0;
+    dfs(src, dist, graph);
+}
