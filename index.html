@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cost de` Travel</title>
+    <title>Travel Time</title>
     <script src="https://kit.fontawesome.com/76b2d5f40b.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="show-graph">
+    <div id = "container">
+        <div id="problem-graph"></div>
+        <div id="solution-graph"></div>
     </div>
-    <div>
+    <div id = "desc">
+        <p>
+            We want to go from <span id = "from" style="color: black"></span> to <span id = "to" style="color: black"></span> in the shortest time possible! <br/>
+            We can travel by <span style="color: green"> road </span> or <span style="color: darkorange"> air.</span> The respective travel time is given on the edges.<br/>
+            Due to budget constraints we can only take <b>flight once</b>. <br/>
+            Click below button to find out the fastest route!
+        </p>
+        <p id = "total-time"> The minimum time taken is : <span id = "time"></span></p>
+        <button type="button" id="solve-graph">Find Fastest Route</button>
         <button type="button" id="generate-graph">Get New Graph</button>
+
     </div>
 
     <script src="index.js"></script>

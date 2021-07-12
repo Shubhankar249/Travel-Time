@@ -1,12 +1,58 @@
-#generate-graph {
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin : 0;
+}
+#container {
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#problem-graph {
+    width: 50%;
+    height: 100%;
+    padding-right: 0.2rem;
+    /*display: inline-block;*/
+    flex-wrap: wrap;
+}
+
+#solution-graph {
+    /*display: inline-block;*/
+    width: 50%;
+    height: 100%;
+    padding-left: 0.2rem;
+    flex-wrap: wrap;
+}
+
+#desc {
+    text-align: center;
+    font-size: larger;
+    color: gray;
+}
+
+button {
     margin: auto;
     display: block;
     font-size: larger;
+}
+
+#solve-graph {
+    background: rgba(255,165,200,0.3);
+    color: rgba(15,32,255,0.86);
+}
+
+#generate-graph {
+    margin-top: 2.4rem;
     background: palegoldenrod;
     color: saddlebrown;
 }
 
-#show-graph {
-    width: 100%;
-    height: 700px;
+#total-time {
+    display: none;
+}
+#time {
+    color: black;
 }
